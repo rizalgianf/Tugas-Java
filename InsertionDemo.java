@@ -18,13 +18,13 @@ public class InsertionDemo {
         }
         System.out.println();
     }
+}
 
-    public class Main {
-        public static void main(String[] args) {
-            int A[] = {10, 6, 8, 3, 1};
-            InsertionDemo.tampil(A);
-            InsertionDemo.insertionSort(A);
-            InsertionDemo.tampil(A);
-        }
+class Main {
+    public static void main(String[] args) {
+        int A[] = {10, 6, 8, 3, 1};
+        InsertionDemo.tampil(A);
+        InsertionDemo.insertionSort(A);
+        InsertionDemo.tampil(A);
     }
 }
