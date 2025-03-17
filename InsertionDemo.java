@@ -1,10 +1,11 @@
 public class InsertionDemo {
 
-    public static void insertionSort(int[] A) {
+    // Metode generik untuk insertion sort
+    public static <T extends Comparable<T>> void insertionSort(T[] A) {
         for (int i = 1; i < A.length; i++) {
-            int key = A[i];
+            T key = A[i];
             int j = i - 1;
-            while ((j >= 0) && (A[j] < key)) {
+            while (j >= 0 && A[j].compareTo(key) > 0) {
                 A[j + 1] = A[j];
                 j--;
             }
@@ -12,9 +13,10 @@ public class InsertionDemo {
         }
     }
 
-    public static void tampil(int data[]) {
-        for (int i = 0; i < data.length; i++) {
-            System.out.print(data[i] + " ");
+    // Metode generik untuk menampilkan array
+    public static <T> void tampil(T[] data) {
+        for (T element : data) {
+            System.out.print(element + " ");
         }
         System.out.println();
     }
@@ -22,7 +24,7 @@ public class InsertionDemo {
 
 class Main {
     public static void main(String[] args) {
-        int A[] = {10, 6, 8, 3, 1};
+        Integer A[] = {10, 6, 8, 3, 1};
         InsertionDemo.tampil(A);
         InsertionDemo.insertionSort(A);
         InsertionDemo.tampil(A);
