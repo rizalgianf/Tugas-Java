@@ -1,4 +1,4 @@
-public class InsertionDemo {
+public class InsertionDemo2 { 
 
     public static void insertionSort(double[] A) {
         for (int i = 1; i < A.length; i++) {
@@ -18,13 +18,13 @@ public class InsertionDemo {
         }
         System.out.println();
     }
+}
 
-    public class Main2 {
-        public static void main(String[] args) {
-            double A[] = {10.3, 6.2, 8.4, 3.6, 1.1};
-            InsertionDemo.tampil(A);
-            InsertionDemo.insertionSort(A);
-            InsertionDemo.tampil(A);
-        }
+class Main2 {
+    public static void main(String[] args) {
+        double A[] = {10.3, 6.2, 8.4, 3.6, 1.1};
+        InsertionDemo2.tampil(A); 
+        InsertionDemo2.insertionSort(A);
+        InsertionDemo2.tampil(A);
     }
 }
